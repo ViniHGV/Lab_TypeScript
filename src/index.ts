@@ -74,3 +74,48 @@ dados.push()
  */
 let aniversario: Date = new Date("2022-12-01 05:00")
 console.log(aniversario.toString())
+
+
+/**
+ * Funções
+ */
+
+function addToHello(name: string): string {
+    return `Olá ${name} Seja Bem vindo !`
+}
+
+let Vini: string = addToHello("Vns")
+console.log(Vini)
+
+
+function addNumber(x:number, y:number): number {
+    return x + y;
+}
+
+let soma: number = addNumber(4, 8)
+console.log(soma)
+
+//Função Multi Typle
+function CallToPhone(phone : number | string): number | string {
+    return phone
+}
+console.log(CallToPhone("11914186155"))
+
+//Funções Async 
+async function getDatabase(id: number): Promise<string> {
+    return "felipe";
+}
+
+/**
+ * Interfaces
+ */
+interface robot2{
+    readonly id:number | string;
+    name:string
+}
+
+const bot : robot2 ={
+    id: 1,
+    name: "Robo"
+}
+console.log(bot)
