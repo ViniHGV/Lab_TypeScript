@@ -61,3 +61,9 @@ let infos : (string | number)[] = ["Vinicius", 19]
  */
 
 let boleto: [string, number, number] = ["Agua", 199.9, 51151]
+
+/**
+ * Arrays Métodos
+ */
+
+dados.push()
