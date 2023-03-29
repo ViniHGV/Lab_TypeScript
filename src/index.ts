@@ -8,7 +8,7 @@ let nome: string = "Vinicius";
 let idade: number = 19;
 let altura: number = 1.85;
 
-console.log(`Meu nome é ${nome} tenho ${idade} anos e ${altura} de altura`)
+//console.log(`Meu nome é ${nome} tenho ${idade} anos e ${altura} de altura`)
 
 //Tipos Especiais
 let nulo: null = null
@@ -73,7 +73,7 @@ dados.push()
  * Dates
  */
 let aniversario: Date = new Date("2022-12-01 05:00")
-console.log(aniversario.toString())
+//console.log(aniversario.toString())
 
 
 /**
@@ -85,7 +85,7 @@ function addToHello(name: string): string {
 }
 
 let Vini: string = addToHello("Vns")
-console.log(Vini)
+//console.log(Vini)
 
 
 function addNumber(x:number, y:number): number {
@@ -93,13 +93,13 @@ function addNumber(x:number, y:number): number {
 }
 
 let soma: number = addNumber(4, 8)
-console.log(soma)
+//console.log(soma)
 
 //Função Multi Typle
 function CallToPhone(phone : number | string): number | string {
     return phone
 }
-console.log(CallToPhone("11914186155"))
+//console.log(CallToPhone("11914186155"))
 
 //Funções Async 
 async function getDatabase(id: number): Promise<string> {
@@ -118,4 +118,38 @@ const bot : robot2 ={
     id: 1,
     name: "Robo"
 }
-console.log(bot)
+//console.log(bot)
+
+/**
+ * Classes
+ */
+//Character SuperClass
+class Character {
+    name: string;
+    levelAttack : number;
+    skill: number;
+
+    constructor(Name:string, levelAttack:number, Skill: number){
+        this.name = Name;
+        this.levelAttack = levelAttack;
+        this.skill = Skill;
+    }
+
+    attack(): void{
+        console.log(`Attack com ${this.levelAttack} pontos`)
+    }
+}
+
+//Magician SubClass
+class magician extends Character{
+    pontosMagicos: number;
+    constructor(Name:string, levelAttack:number, Skill: number, pontosMagicos: number){
+        super(Name, levelAttack,Skill)
+        this.pontosMagicos = pontosMagicos;
+    }
+}
+const p1 = new Character("Vinicius", 20, 19)
+p1.attack()
+
+//const p2 = new magician("Mago", 09, 10, 300)
+//p2.attack()
