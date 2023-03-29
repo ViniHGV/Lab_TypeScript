@@ -1,5 +1,5 @@
-/*
-Variaveis
+/** 
+*Variaveis
 */
 
 //Tipos Primitivos
@@ -20,8 +20,8 @@ let semRetorno: void
 
 
 
-/*
- Objetos 
+/** 
+ *Objetos 
 */
 
 //Objeto - sem previsibilidade
@@ -45,8 +45,19 @@ let meuProduto : ProdutoLoja = {
 }
 
 
-/*
-Arrays
+/** 
+*Arrays
 */
 
 let dados: string[] = ["Vinicius", "Bruna", "Mary", "Noni"];
+let dados2: Array<string> = ["Vinicius", "Bruna", "Mary", "Noni"];
+
+//Array Multi Types
+let infos : (string | number)[] = ["Vinicius", 19]
+
+
+/**
+ * Tuplas
+ */
+
+let boleto: [string, number, number] = ["Agua", 199.9, 51151]
