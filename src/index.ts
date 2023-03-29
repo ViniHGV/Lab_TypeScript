@@ -13,3 +13,23 @@ let indefinido: undefined = undefined
 //Tipos Abrangentes
 let ani: any = "Qualquer coisa"
 let semRetorno: void 
+
+//Objeto - sem previsibilidade
+let pessoa: object = {
+    nome: "Vinicius",
+    idade: 19,
+    altura: 1.85
+}
+
+//Objeto Tipado / Com previsibilidade
+type ProdutoLoja = {
+    nome: string;
+    preco: number;
+    unidades: number;
+}
+
+let meuProduto : ProdutoLoja = {
+    nome: "Tênis",
+    preco: 100,
+    unidades: 8,
+}
