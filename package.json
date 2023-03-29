@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "npx isc && node build/index.js"
+    "start": "npx tsc && node build/index.js"
   },
   "devDependencies": {
     "typescript": "^5.0.2"
