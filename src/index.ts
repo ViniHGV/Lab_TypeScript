@@ -67,3 +67,10 @@ let boleto: [string, number, number] = ["Agua", 199.9, 51151]
  */
 
 dados.push()
+
+
+/**
+ * Dates
+ */
+let aniversario: Date = new Date("2022-12-01 05:00")
+console.log(aniversario.toString())
