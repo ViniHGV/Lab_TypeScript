@@ -1,3 +1,7 @@
+/*
+Variaveis
+*/
+
 //Tipos Primitivos
 let ligado: boolean = true;
 let nome: string = "Vinicius";
@@ -13,6 +17,12 @@ let indefinido: undefined = undefined
 //Tipos Abrangentes
 let ani: any = "Qualquer coisa"
 let semRetorno: void 
+
+
+
+/*
+ Objetos 
+*/
 
 //Objeto - sem previsibilidade
 let pessoa: object = {
@@ -33,3 +43,10 @@ let meuProduto : ProdutoLoja = {
     preco: 100,
     unidades: 8,
 }
+
+
+/*
+Arrays
+*/
+
+let dados: string[] = ["Vinicius", "Bruna", "Mary", "Noni"];
