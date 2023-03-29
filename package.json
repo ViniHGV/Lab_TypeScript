@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "npx isc && node build/index.js"
+  },
   "devDependencies": {
     "typescript": "^5.0.2"
   }
