@@ -149,7 +149,29 @@ class magician extends Character{
     }
 }
 const p1 = new Character("Vinicius", 20, 19)
-p1.attack()
+//p1.attack()
 
-//const p2 = new magician("Mago", 09, 10, 300)
-//p2.attack()
+/**
+ *Decorators
+ */
+function ExibirNome(target: any){
+    console.log(target)
+}
+
+@ExibirNome
+class Funcionario{}
+
+function apiVersion(version: string){
+    return(target: any) => {
+        Object.assign(target.prototype, {__version: version})
+    }
+}
+//Atribute decorator
+
+class Api{
+    name:string
+
+    constructor(name:string){
+        this.name = name
+    }
+}
